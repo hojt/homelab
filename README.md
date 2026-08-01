@@ -1,0 +1,137 @@
+# Homelab
+
+A Kubernetes-based homelab built incrementally using GitOps principles.
+
+This repository contains the architectural documentation for the homelab project.
+Implementation is intentionally split across multiple repositories, while this
+repository captures the overall vision, design principles, and architectural
+decisions.
+
+
+## Vision
+
+The goal of this project is to build a modern, reproducible, and maintainable
+local platform for developing and operating cloud-native applications.
+
+The project evolves through small, working increments. Simplicity is preferred
+over completeness, and abstractions are introduced only when they solve a real
+problem.
+
+
+## Design Principles
+
+### MVP first
+
+Develop the platform through small, independently valuable increments.
+
+Avoid building infrastructure or abstractions before they are needed.
+
+
+### GitOps
+
+Git is the desired source of truth.
+
+Manual operations are acceptable during bootstrap, but the long-term goal is
+that the platform continuously reconciles its desired state from Git.
+
+
+### Portability
+
+Prefer open standards and portable tooling over vendor-specific solutions.
+
+Avoid unnecessary dependencies on a specific operating system, editor, IDE,
+cloud provider, or proprietary platform whenever practical.
+
+Repositories should remain usable across different developer workstations and
+execution environments.
+
+
+### Kubernetes-first
+
+Applications should be designed to run on Kubernetes.
+
+The local development experience should resemble the deployment environment
+whenever practical.
+
+
+### Separation of responsibilities
+
+Each repository owns a single responsibility.
+
+Platform lifecycle, environment configuration, and application source code are
+kept separate.
+
+
+### Developer experience
+
+Development should be reproducible and consistent across repositories.
+
+Every repository provides:
+
+- a Dev Container
+- a `dev.sh` entrypoint
+- a `Taskfile.yaml` exposing the repository's common development tasks
+
+Personal editor configuration and workflow remain independent of the project.
+
+
+### Host responsibilities
+
+The developer's host machine is intentionally kept lightweight.
+
+The host is responsible for:
+
+- Git
+- Podman
+- Dev Container CLI
+- tmux
+- a terminal emulator
+- a text editor
+
+Repository-specific tooling should execute inside the Dev Container whenever
+practical.
+
+
+### Keep it boring
+
+Prefer well-understood technologies.
+
+Delay abstractions until experience demonstrates that they are needed.
+
+
+## Repository Overview
+
+| Repository | Purpose |
+|------------|---------|
+| `local-platform` | Bootstrap and operate the local Kubernetes platform. |
+| `local-environments` | Describe environment state and evolve into the GitOps repository. |
+| `example-backend` | Example backend application used to validate the platform. |
+| `example-frontend` | Example frontend application used to validate the platform. |
+
+Additional repositories may be introduced as the platform evolves.
+
+
+## Architecture Decision Records
+
+Architectural decisions are documented as Architecture Decision Records (ADRs).
+
+The ADRs describe **why** decisions were made rather than implementation
+details.
+
+| ADR | Title |
+|-----|-------|
+| [ADR-0001](./docs/adr/0001-repository-structure.md) | Repository Structure |
+| [ADR-0002](./docs/adr/0002-development-environment-philosophy.md) | Development Environment Philosophy |
+| [ADR-0003](./docs/adr/0003-repository-self-containment.md) | Repository Self-Containment |
+| [ADR-0004](./docs/adr/0004-incremental-developement.md) | Incremental Development |
+
+
+See [`docs/adr/`](./docs/adr/) for details.
+
+
+## Status
+
+This project is under active development.
+
+Architecture evolves incrementally, and decisions are documented once they have
+proven themselves in practice.
