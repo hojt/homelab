@@ -147,6 +147,7 @@ details.
 | [ADR-0002](./docs/adr/0002-development-environment-philosophy.md) | Development Environment Philosophy |
 | [ADR-0003](./docs/adr/0003-repository-self-containment.md) | Repository Self-Containment |
 | [ADR-0004](./docs/adr/0004-incremental-developement.md) | Incremental Development |
+| [ADR-0005](./docs/adr/0005-gitops-architecture.md) | GitOps Architecture |
 
 
 See [`docs/adr/`](./docs/adr/) for details.
