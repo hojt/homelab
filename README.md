@@ -8,10 +8,33 @@ repository captures the overall vision, design principles, and architectural
 decisions.
 
 
+## Purpose
+
+The primary goal of this project is learning.
+
+This project is primarily a learning journey rather than a production platform.
+
+The homelab serves as a practical platform for exploring modern software
+development and platform engineering practices, including topics such as:
+
+- DevOps
+- Platform Engineering
+- Kubernetes
+- GitOps
+- Containers
+- Cloud-native applications
+- Infrastructure as Code
+- Observability
+
+The platform itself is not the end goal. It is the vehicle used to gain
+practical experience, evaluate technologies, and understand architectural
+trade-offs through hands-on implementation.
+
+
 ## Vision
 
-The goal of this project is to build a modern, reproducible, and maintainable
-local platform for developing and operating cloud-native applications.
+Build a modern homelab while continuously developing practical
+knowledge of modern platform engineering and cloud-native technologies.
 
 The project evolves through small, working increments. Simplicity is preferred
 over completeness, and abstractions are introduced only when they solve a real
