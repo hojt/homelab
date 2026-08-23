@@ -69,6 +69,13 @@ Repositories should remain usable across different developer workstations and
 execution environments.
 
 
+### Disposability
+
+Local clusters are treated as disposable infrastructure. Persistent platform 
+state required for recovery, including cryptographic key material, is backed 
+up independently of the cluster and is never stored unencrypted in Git.
+
+
 ### Kubernetes-first
 
 Applications should be designed to run on Kubernetes.
@@ -148,6 +155,7 @@ details.
 | [ADR-0003](./docs/adr/0003-repository-self-containment.md) | Repository Self-Containment |
 | [ADR-0004](./docs/adr/0004-incremental-developement.md) | Incremental Development |
 | [ADR-0005](./docs/adr/0005-gitops-architecture.md) | GitOps Architecture |
+| [ADR-006](./docs/adr/006-persist-secret-encryption-key-material.md) | Persist secret encryption key material |
 
 
 See [`docs/adr/`](./docs/adr/) for details.
