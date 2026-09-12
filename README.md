@@ -135,8 +135,13 @@ Delay abstractions until experience demonstrates that they are needed.
 |------------|---------|
 | `local-platform` | Bootstrap and operate the local Kubernetes platform. |
 | `local-environments` | Describe environment state and evolve into the GitOps repository. |
-| `example-backend` | Example backend application used to validate the platform. |
-| `example-frontend` | Example frontend application used to validate the platform. |
+| `example-app` | Example application workspace used to validate application development, deployment boundaries, and agentic coding workflows. |
+
+Application workspaces may contain multiple independently buildable and
+deployable components, such as frontends, backend services, and workers.
+Components remain together while they normally evolve as one application and
+may be split into separate repositories when a concrete need for independent
+ownership or evolution emerges.
 
 Additional repositories may be introduced as the platform evolves.
 
@@ -155,7 +160,8 @@ details.
 | [ADR-0003](./docs/adr/0003-repository-self-containment.md) | Repository Self-Containment |
 | [ADR-0004](./docs/adr/0004-incremental-developement.md) | Incremental Development |
 | [ADR-0005](./docs/adr/0005-gitops-architecture.md) | GitOps Architecture |
-| [ADR-006](./docs/adr/006-persist-secret-encryption-key-material.md) | Persist secret encryption key material |
+| [ADR-0006](./docs/adr/0006-persist-secret-encryption-key-material.md) | Persist secret encryption key material |
+| [ADR-0007](./docs/adr/0007-application-workspace-structure.md) | Application Workspace Structure |
 
 
 See [`docs/adr/`](./docs/adr/) for details.

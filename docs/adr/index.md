@@ -35,6 +35,6 @@ ADRs are written after a decision has been made and accepted.
 Prefer creating a new ADR over modifying an existing one.
 
 If an architectural decision changes, create a new ADR and reference the one it
-supersedes.
+supersedes or refines.
 
 See `TEMPLATE.md` when creating a new ADR.
