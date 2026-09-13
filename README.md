@@ -2,10 +2,10 @@
 
 A Kubernetes-based homelab built incrementally using GitOps principles.
 
-This repository contains the architectural documentation for the homelab project.
-Implementation is intentionally split across multiple repositories, while this
-repository captures the overall vision, design principles, and architectural
-decisions.
+This repository owns the architectural documentation and decisions for the
+homelab project. Implementation is intentionally split across multiple
+repositories, while this repository captures the overall vision, design
+principles, and architectural decisions.
 
 
 ## Purpose
@@ -100,7 +100,7 @@ Every repository provides:
 
 - a Dev Container
 - a `dev.sh` entrypoint
-- a `Taskfile.yaml` exposing the repository's common development tasks
+- a `Taskfile.yml` exposing the repository's common development tasks
 
 Personal editor configuration and workflow remain independent of the project.
 
@@ -134,7 +134,7 @@ Delay abstractions until experience demonstrates that they are needed.
 | Repository | Purpose |
 |------------|---------|
 | `local-platform` | Bootstrap and operate the local Kubernetes platform. |
-| `local-environments` | Describe environment state and evolve into the GitOps repository. |
+| `local-environments` | Own GitOps desired state for Kubernetes environments. |
 | `example-app` | Example application workspace used to validate application development, deployment boundaries, and agentic coding workflows. |
 
 Application workspaces may contain multiple independently buildable and

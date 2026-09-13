@@ -22,7 +22,7 @@ Current repositories include:
 | Repository | Responsibility |
 |------------|----------------|
 | `local-platform` | Bootstrap and operate the local Kubernetes platform. |
-| `local-environments` | Describe environment state and evolve into the GitOps repository. |
+| `local-environments` | Own GitOps desired state for Kubernetes environments. |
 | `example-backend` | Example backend application used to validate the platform and development workflow. |
 | `example-frontend` | Example frontend application used to validate the platform and development workflow. |
 
