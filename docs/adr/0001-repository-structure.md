@@ -1,6 +1,7 @@
 # ADR-0001: Repository Structure
 
 **Status:** Accepted
+**Refined by:** ADR-0007
 
 ## Context
 

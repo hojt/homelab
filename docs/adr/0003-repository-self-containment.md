@@ -22,7 +22,7 @@ and develop that repository, including:
 - a README describing its purpose
 - a Dev Container
 - a `dev.sh` entrypoint
-- a `Taskfile.yaml` exposing common development tasks
+- a `Taskfile.yml` exposing common development tasks
 
 Repository-specific tooling and automation belong to the repository itself
 rather than depending on external scripts or shared infrastructure.
