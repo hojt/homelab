@@ -153,18 +153,7 @@ Architectural decisions are documented as Architecture Decision Records (ADRs).
 The ADRs describe **why** decisions were made rather than implementation
 details.
 
-| ADR | Title |
-|-----|-------|
-| [ADR-0001](./docs/adr/0001-repository-structure.md) | Repository Structure |
-| [ADR-0002](./docs/adr/0002-development-environment-philosophy.md) | Development Environment Philosophy |
-| [ADR-0003](./docs/adr/0003-repository-self-containment.md) | Repository Self-Containment |
-| [ADR-0004](./docs/adr/0004-incremental-developement.md) | Incremental Development |
-| [ADR-0005](./docs/adr/0005-gitops-architecture.md) | GitOps Architecture |
-| [ADR-0006](./docs/adr/0006-persist-secret-encryption-key-material.md) | Persist secret encryption key material |
-| [ADR-0007](./docs/adr/0007-application-workspace-structure.md) | Application Workspace Structure |
-
-
-See [`docs/adr/`](./docs/adr/) for details.
+See [`docs/adr/index.md`](./docs/adr/index.md) for an index of ADRs and [`docs/adr/`](./docs/adr/) for details.
 
 
 ## Status
