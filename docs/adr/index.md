@@ -37,7 +37,7 @@ Prefer creating a new ADR over modifying an existing one.
 If an architectural decision changes, create a new ADR and reference the one it
 supersedes or refines.
 
-See `TEMPLATE.md` when creating a new ADR.
+See [`TEMPLATE.md`](./TEMPLATE.md) when creating a new ADR.
 
 ## Records
 
@@ -46,9 +46,10 @@ See `TEMPLATE.md` when creating a new ADR.
 | [ADR-0001](./0001-repository-structure.md) | Repository Structure |
 | [ADR-0002](./0002-development-environment-philosophy.md) | Development Environment Philosophy |
 | [ADR-0003](./0003-repository-self-containment.md) | Repository Self-Containment |
-| [ADR-0004](./0004-incremental-developement.md) | Incremental Development |
+| [ADR-0004](./0004-incremental-development.md) | Incremental Development |
 | [ADR-0005](./0005-gitops-architecture.md) | GitOps Architecture |
 | [ADR-0006](./0006-persist-secret-encryption-key-material.md) | Persist secret encryption key material |
 | [ADR-0007](./0007-application-workspace-structure.md) | Application Workspace Structure |
 | [ADR-0008](./0008-platform-development-workspace.md) | Platform Development Workspace |
 | [ADR-0009](./0009-application-workspace-composition.md) | Application Workspace Composition |
+| [ADR-0010](./0010-coding-agent-trust-model.md) | Coding Agent Trust Model |
