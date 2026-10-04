@@ -147,6 +147,12 @@ Some risks are reduced but not eliminated:
   of anything that passes review unnoticed.
 - Isolation depends on the host kernel and container runtime. Their
   vulnerabilities are outside the scope of this decision.
+- The Dev Container CLI always disables SELinux labeling when running
+  containers with Podman. While the coding-agent environment is started
+  through the Dev Container CLI, host mandatory access control cannot be
+  preserved, and containment relies on the remaining layers. Starting the
+  coding-agent environment without the Dev Container CLI would remove this
+  constraint, but would be a separate decision.
 
 Existing workspaces adopt these principles through separate, validated
 changes. This decision does not claim that existing workspaces already
