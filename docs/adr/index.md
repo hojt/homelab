@@ -58,3 +58,4 @@ See [`TEMPLATE.md`](./TEMPLATE.md) when creating a new ADR.
 | [ADR-0008](./0008-platform-development-workspace.md) | Platform Development Workspace |
 | [ADR-0009](./0009-application-workspace-composition.md) | Application Workspace Composition |
 | [ADR-0010](./0010-coding-agent-trust-model.md) | Coding Agent Trust Model |
+| [ADR-0011](./0011-coding-agents-deliver-changes-as-branches.md) | Coding Agents Deliver Changes as Branches |
