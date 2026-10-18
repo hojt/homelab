@@ -29,3 +29,8 @@ Describe the architectural decision that was made.
 ## Consequences
 
 Describe the expected consequences, trade-offs, and follow-up implications.
+
+<!--
+Addenda are added only after acceptance, under a final "## Addenda"
+section, as dated entries. See index.md.
+-->

@@ -37,6 +37,11 @@ Prefer creating a new ADR over modifying an existing one.
 If an architectural decision changes, create a new ADR and reference the one it
 supersedes or refines.
 
+Accepted ADRs are not rewritten. Facts discovered while implementing a
+decision may be added in a dated entry under an Addenda section at the
+end of the ADR. Changing the decision itself requires a new ADR that
+refines or supersedes it.
+
 See [`TEMPLATE.md`](./TEMPLATE.md) when creating a new ADR.
 
 ## Records
