@@ -59,3 +59,5 @@ See [`TEMPLATE.md`](./TEMPLATE.md) when creating a new ADR.
 | [ADR-0009](./0009-application-workspace-composition.md) | Application Workspace Composition |
 | [ADR-0010](./0010-coding-agent-trust-model.md) | Coding Agent Trust Model |
 | [ADR-0011](./0011-coding-agents-deliver-changes-as-branches.md) | Coding Agents Deliver Changes as Branches |
+| [ADR-0012](./0012-coding-agents-receive-tasks-from-the-repository.md) | Coding Agents Receive Tasks From the Repository |
+
