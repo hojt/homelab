@@ -160,3 +160,18 @@ that provider. ADR-0011 and ADR-0012 remain unchanged.
 Existing workspaces adopt this decision through separate, validated changes.
 This decision does not claim that any workspace already uses GitHub as its
 transport.
+
+## Addenda
+
+### 2026-10-28: Merging on repositories owned by a personal account
+
+On repositories owned by a personal account, the rule that restricts updates
+to the default branch also blocks merging pull requests, except for actors
+that explicitly bypass the rules. GitHub offers such repositories no rule
+that lets only the developer merge while blocking the app, as it does for
+repositories owned by an organization.
+
+The developer therefore approves agent pull requests and then merges them by
+explicitly bypassing the rules. Bypasses are recorded in the repository's
+rule insights. The decision is unchanged: the app cannot update the default
+branch.
