@@ -46,6 +46,12 @@ See [`TEMPLATE.md`](./TEMPLATE.md) when creating a new ADR.
 
 ## Records
 
+ADR-0010 to ADR-0014 together define how coding agents are contained, deliver
+their work, receive tasks, use GitHub, and share infrastructure through the
+template. See [`../coding-agents.md`](../coding-agents.md) for an overview of
+how they fit together, and for the implementation choices, limitations, and
+next steps that the ADRs do not record.
+
 | ADR | Title |
 |-----|-------|
 | [ADR-0001](./0001-repository-structure.md) | Repository Structure |

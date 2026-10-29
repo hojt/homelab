@@ -155,6 +155,12 @@ details.
 
 See [`docs/adr/index.md`](./docs/adr/index.md) for an index of ADRs and [`docs/adr/`](./docs/adr/) for details.
 
+## Coding agents
+
+Coding agents are used in the application and platform workspaces, contained
+in a sandbox and delivering their work as branches for review. See
+[`docs/coding-agents.md`](docs/coding-agents.md) for an overview of the design,
+its decisions, known limitations, and next steps.
 
 ## Status
 
